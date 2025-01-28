@@ -7,9 +7,9 @@ import errorHandler from "./src/utils/commonError.js";
 const app = express();
 
 app.use(express.json());
-app.use("/api/customer", router);
-app.use("/api/product", productRouter);
-app.use("/api/quotations",quotationRoute);
+app.use("/api/customer/", router);
+app.use("/api/product/", productRouter);
+app.use("/api/quotations/",quotationRoute);
 
 app.use(errorHandler);
 const startServer = async () => {
